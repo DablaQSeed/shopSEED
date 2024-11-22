@@ -17,7 +17,7 @@
     <a href="shopSEED.html" class="logo">shop<span class="text-success">SEED</span></a>
     <a href="shopSEED.html" class="logo-responsive">S<span class="text-success">S</span></a>
     <div class="checkout">
-      Checkout (<a href="shopSEED.html" class="text-success">3 items</a>)
+      Checkout (<a href="shopSEED.html" class="text-success js-quantity-item">3 items</a>)
     </div>
     <img class="lock" src="images/icons/checkout-lock-icon.png" alt="">
   </header>
@@ -25,135 +25,7 @@
   <div class="cart-item-container">
     <h5>Review your order</h5>
     <div class="cart-item">
-      <div class="cart-summary-container">
-        <div class="cart-summary">
-
-          <h4 class="text-success">Delivery date: Wednesday, November 27</h4>
-  
-          <div class="cart-item-details">
-            <div class="d-flex">
-              <div class="img-container">
-                <img src="images/products/athletic-cotton-socks-6-pairs.jpg" alt="">
-              </div>
-  
-              <div class="cart-details">
-                <div class="product-name text-to-2-lines">
-                  Black and Gray Athletic Cotton Socks - 6 Pairs
-                </div>
-                <div class="product-price">
-                  $10.90
-                </div>
-                <div class="cart-update">
-                  <span class="quantity-label">
-                    Quantity: <span class="cart-quantity">1000</span>
-                  </span>
-                  <span class="update-quantity text-primary">
-                    Update
-                  </span>
-                  <span class="delete-item text-danger">
-                    Delete
-                  </span>
-                </div>
-  
-  
-              </div>
-            </div>
-  
-  
-            <div class="delivery-options-details">
-              <div class="delivery-title">
-                Choose a delivery option:
-              </div>
-  
-              <div class="delivery-details">
-                <input type="radio">
-                <div class="delivery-option">
-                  <div class="delivery-date">Wednesday, November 27</div>
-                  <div class="shipping">Free Shipping</div>
-                </div>
-              </div>
-              <div class="delivery-details">
-                <input type="radio">
-                <div class="delivery-option">
-                  <div class="delivery-date">Wednesday, November 27</div>
-                  <div class="shipping">Free Shipping</div>
-                </div>
-              </div>
-              <div class="delivery-details">
-                <input type="radio">
-                <div class="delivery-option">
-                  <div class="delivery-date">Wednesday, November 27</div>
-                  <div class="shipping">Free Shipping</div>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-        </div>
-        <div class="cart-summary">
-  
-          <h4 class="text-success">Delivery date: Wednesday, November 27</h4>
-  
-          <div class="cart-item-details">
-            <div class="d-flex">
-              <div class="img-container">
-                <img src="images/products/athletic-cotton-socks-6-pairs.jpg" alt="">
-              </div>
-  
-              <div class="cart-details">
-                <div class="product-name text-to-2-lines">
-                  Black and Gray Athletic Cotton Socks - 6 Pairs
-                </div>
-                <div class="product-price">
-                  $10.90
-                </div>
-                <div class="cart-update">
-                  <span class="quantity-label">
-                    Quantity: <span class="cart-quantity">1000</span>
-                  </span>
-                  <span class="update-quantity text-primary">
-                    Update
-                  </span>
-                  <span class="delete-item text-danger">
-                    Delete
-                  </span>
-                </div>
-  
-  
-              </div>
-            </div>
-  
-  
-            <div class="delivery-options-details">
-              <div class="delivery-title">
-                Choose a delivery option:
-              </div>
-  
-              <div class="delivery-details">
-                <input type="radio">
-                <div class="delivery-option">
-                  <div class="delivery-date">Wednesday, November 27</div>
-                  <div class="shipping">Free Shipping</div>
-                </div>
-              </div>
-              <div class="delivery-details">
-                <input type="radio">
-                <div class="delivery-option">
-                  <div class="delivery-date">Wednesday, November 27</div>
-                  <div class="shipping">Free Shipping</div>
-                </div>
-              </div>
-              <div class="delivery-details">
-                <input type="radio">
-                <div class="delivery-option">
-                  <div class="delivery-date">Wednesday, November 27</div>
-                  <div class="shipping">Free Shipping</div>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-        </div>
+      <div class="cart-summary-container js-cart-summary-container">
       </div>
       <div class="payment-summary">
 
@@ -184,6 +56,8 @@
       </div>
     </div>
   </div>
+
+  <script type="module" src="scripts/checkout/cartSummary.js"></script>
 </body>
 
 </html>

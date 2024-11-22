@@ -1,4 +1,4 @@
-export const cart = JSON.parse(localStorage.getItem('shopSEED-cart')) || [];
+export let cart = JSON.parse(localStorage.getItem('shopSEED-cart')) || [];
 
 function saveToStorage() {
     localStorage.setItem('shopSEED-cart', JSON.stringify(cart))
@@ -24,5 +24,32 @@ export function addToCart(productId) {
       });
     }
   
+    saveToStorage();
+}
+
+export function removeFromCart(productId) {
+  const newCart = [];
+
+  cart.forEach((cartItem)=>{
+    if (cartItem.productId !== productId) {
+     newCart.push(cartItem)
+    }
+  })
+  
+  cart = newCart;
+
+  saveToStorage();
+}
+
+export function saveNewQuantity(productId, newQuantity) {
+    let matchingItem;
+    cart.forEach((cartItem)=>{
+      if (cartItem.productId === productId) {
+        matchingItem = cartItem
+      }
+    });
+    
+    matchingItem.quantity = newQuantity;
+    
     saveToStorage();
 }

@@ -92,8 +92,34 @@ header {
   margin-top: .2em;
 }
 
-.cart-update .update-quantity{
+.input-quantity{
+  padding: .1em;
+  width: 45px;
+  /* height: 30px; */
+}
+
+.input-quantity, .save-quantity{
+  display: none;
+}
+
+.edit-quantity .input-quantity,
+.edit-quantity .save-quantity{
+   display: initial;
+}
+
+.edit-quantity .update-quantity,
+.edit-quantity .cart-quantity{
+  display: none;
+}
+
+.cart-update .update-quantity,
+.save-quantity{
    margin: 0 1em;
+   cursor: pointer;
+}
+
+.delete-item{
+  cursor: pointer;
 }
 
 .delivery-options-details{
